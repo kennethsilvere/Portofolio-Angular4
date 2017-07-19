@@ -1,0 +1,11 @@
+<div id="infoBubble" class="talk-bubble tri-right round right-in">
+  <div class="talktext">
+
+    <app-flashlight style="float: left" [flashOrNo]="shouldFlash"></app-flashlight>
+    <span style="float: right"
+          (click)="closeBubble()"><a href="#">X</a></span>
+    <br>
+    <p>{{bubbleMessage}}</p>
+
+  </div>
+</div>

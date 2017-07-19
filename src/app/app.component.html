@@ -1,0 +1,20 @@
+<div class="container" >
+  <app-header *ngIf = "showHeader()"></app-header>
+
+<div class="row">
+  <div class="col-md-12">
+    <simple-notifications [options]="options" (onCreate)="created($event)" (onDestroy)="destroyed($event)"></simple-notifications>
+  </div>
+</div>
+
+  <div class="row">
+  <app-aboutme></app-aboutme>
+  </div>
+
+  <app-foryou></app-foryou>
+  <app-skills></app-skills>
+  
+  <button class="btn btn-primary"  (click)="notify('ken', 'appComponent', 'success', 1000, false)">Notify</button>
+
+
+</div>
